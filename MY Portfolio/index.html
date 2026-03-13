@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Deeksha VS - Full Stack Developer Portfolio</title>
+
+    <meta name="description" content="Portfolio of a full stack developer specializing in MERN stack projects">
+    <meta name="keywords" content="portfolio, developer, MERN, React, Node.js">
+    <meta name="author" content="Deeksha VS">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph for social media -->
+    <meta property="og:title" content="Deeksha VS - Portfolio">
+    <meta property="og:description" content="Explore my projects and skills">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header>
+        <nav>
+            <div class="nav-container">
+
+                <a href="#home" class="logo">Deeksha</a>
+
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Hello, I'm Deeksha VS</h1>
+            <img 
+        src="assets/images/profile.jpg.jpg"
+        alt="Deeksha VS profile photo"
+        width="200"
+        height="200"
+        loading="lazy"
+        
+    >
+            <p>Full Stack Developer | MERN Stack Learner</p>
+        </section>
+         
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am Deeksha VS, an aspiring Full Stack Developer with a strong interest in web development and software technologies. I have experience working with HTML, CSS, JavaScript, Python, and MySQL. 
+            </p><br>
+            <p>Currently, I am learning Full Stack Development and building projects to improve my technical skills and problem-solving abilities.</p>
+        </section>
+
+        <section id="skills">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skills-container">
+
+        <article class="skill-category">
+        <h3>Frontend</h3>
+        <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        </ul>
+        </article>
+
+        <article class="skill-category">
+        <h3>Backend</h3>
+        <ul>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>Node.js</li>
+        </ul>
+        </article>
+
+        <article class="skill-category">
+        <h3>Tools</h3>
+        <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        </ul>
+        </article>
+
+        </div>
+
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <!-- Will add project cards here -->
+          <div class="projects-grid">
+
+        <article class="project-card">
+        <img
+        src="assets/images/project 1.png"
+        alt="AI Model Carbon Footprint Estimator"
+        width="300"
+        height="200"
+        loading="lazy"
+        >
+
+        <h3>AI Model Carbon Footprint Estimator: Machine Learning-Based Energy and CO₂ Prediction System </h3>
+        <p>The AI Model Carbon Footprint Estimator is a machine learning-based system designed to estimate the energy consumption and carbon dioxide (CO₂) emissions generated during AI model training. The system allows users to input parameters such as hardware type, number of devices, training duration, batch size, dataset size, utilization, and data center efficiency. Using a Random Forest regression model trained on a synthetic dataset, the platform predicts the expected energy usage and corresponding carbon emissions. The project helps raise awareness about the environmental impact of AI development and supports the adoption of sustainable and energy-efficient AI practices.</p>
+
+        <a href="#">View Project</a>
+
+        </article>
+
+
+        <article class="project-card">
+        <img
+        src="assets/images/project 2.png"
+        alt="AI Screenshot To HTML Code Generator"
+        width="300"
+        height="200"
+        loading="lazy"
+        >
+
+        <h3>AI Screenshot To HTML Code Generator</h3>
+        <p>AI Screenshot to HTML Code Generator is an AI-powered tool that converts UI screenshots into structured HTML code automatically. The system analyzes the uploaded interface image using computer vision and machine learning techniques to detect layout elements such as text, buttons, images, and containers. It then generates corresponding HTML code that replicates the visual structure of the interface. This project helps developers quickly transform design screenshots into functional web layouts, reducing manual coding time and improving development efficiency.</p>
+
+        <a href="#">View Project</a>
+
+        </article>
+
+
+        </div>
+
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Email: velurudeeksha2003@gmail.com</p>
+        </section>
+        <section id="contact">
+        <h2>Get In Touch</h2>
+
+        <form id="contact-form" action="#" method="POST">
+
+        <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input 
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="100"
+        >
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        >
+        </div>
+
+        <div class="form-group">
+        <label for="subject">Subject *</label>
+
+        <select id="subject" name="subject" required>
+
+        <option value="">--Select--</option>
+        <option value="inquiry">General Inquiry</option>
+        <option value="collaboration">Collaboration</option>
+        <option value="feedback">Feedback</option>
+
+        </select>
+        </div>
+
+        <div class="form-group">
+        <label for="message">Message *</label>
+
+        <textarea
+        id="message"
+        name="message"
+        rows="6"
+        required
+        minlength="10"
+        maxlength="1000"
+        ></textarea>
+
+        </div>
+
+        <div class="form-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to be contacted</label>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+        <button type="reset" class="btn-secondary">Clear</button>
+
+        </form>
+        </section>
+
+    </main>
+
+    <footer>
+            <h3>Subscribe to Newsletter</h3>
+
+        <form>
+
+        <input
+        type="email"
+        placeholder="Enter your email"
+        required
+        >
+
+        <button type="submit">Subscribe</button>
+
+        </form>
+    </footer>
+</body>
+</html>
