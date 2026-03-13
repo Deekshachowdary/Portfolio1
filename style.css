@@ -1,0 +1,222 @@
+
+/* CSS Reset & Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #9f0d58;
+    --secondary: #e764b3;
+    --light: #f5f5f5;
+    --dark: #333;
+    --spacing: 16px;
+    
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: #fff;
+}
+
+/* Header & Navigation */
+header {
+    background: var(--primary);
+    color: white;
+    padding: var(--spacing);
+    position: sticky;
+    top: 0;
+    
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: auto;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing);
+}
+
+section {
+    margin: 60px 0;
+    padding: var(--spacing);
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 80px var(--spacing);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: var(--spacing);
+}
+
+/* Cards */
+.project-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: var(--spacing);
+    background: var(--light);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: var(--spacing);
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-form {
+    width: 400px;
+    margin: auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.skills-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-category{
+    flex: 1;
+    min-width: 200px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: var(--spacing);
+    margin-top: 60px;
+}
+
+/* Projects grid layout */
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+/* Mobile: stack projects */
+@media (max-width: 768px) {
+    .projects-grid {
+        flex-direction: column;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+
+    .project-card {
+        flex: 0 1 calc(33.333% - var(--spacing));
+    }
+
+}
+
+/* Large Desktop */
+@media (min-width: 1440px) {
+
+    main {
+        max-width: 1200px;
+    }
+}
